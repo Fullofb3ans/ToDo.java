@@ -87,7 +87,7 @@ public class ToDo {
                 case "SHOW":
                     System.out.println(Phrases.SEPARATOR.getText());
                     SqlConnect.connect();
-                    SqlConnect.find_all();
+                    SqlConnect.findAll();
                     SqlConnect.disconnect();
                     System.out.println(Phrases.SEPARATOR.getText());
                     break;
