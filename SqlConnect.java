@@ -18,7 +18,7 @@ public class SqlConnect {
         statement.executeUpdate(String.format("INSERT INTO notes(title, text) values('%s', '%s');", title, text));
     }
 
-    static void find_all() throws SQLException {
+    static void findAll() throws SQLException {
         try(ResultSet rs = statement.executeQuery("select * from notes")) {
             while (rs.next()){
                 System.out.println("|" + " Задача: " + rs.getString("title") + " |" + " Содержание: " + rs.getString("text") + "|" );
